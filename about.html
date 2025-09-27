@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - holacash.network</title>
+    <meta name="description" content="Learn about the team and mission behind holacash.network. We are dedicated to building the most transparent and effective affiliate network for our partners.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html">
+                <img src="./assets/logo.svg" alt="holacash.network Logo" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="features.html" class="text-gray-600 hover:text-green-600 font-semibold">Features</a>
+                <a href="about.html" class="text-green-600 hover:text-green-700 font-semibold">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 font-semibold">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="px-4 py-2 text-green-600 border border-green-600 rounded-md hover:bg-green-600 hover:text-white transition">Log In</a>
+                <a href="#" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">Sign Up</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-4">
+            <a href="features.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Features</a>
+            <a href="about.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">About Us</a>
+            <a href="contact.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Contact</a>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="px-4 py-2 text-green-600 border border-green-600 rounded-md hover:bg-green-600 hover:text-white transition">Log In</a>
+                <a href="#" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Our Mission</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">holacash.network was founded by a team of passionate affiliate marketing experts with a single mission: to create a platform that empowers affiliates and advertisers to achieve their goals. We are committed to providing the best technology, support, and offers in the industry.</p>
+            </div>
+
+            <div class="mt-20 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Team</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our team is composed of seasoned veterans from the performance marketing world. With decades of combined experience, we understand the challenges affiliates and advertisers face. We are dedicated to building long-term partnerships based on trust, transparency, and mutual success.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 holacash.network. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -6,127 +6,123 @@
     <title>holacash.network - The Future of Affiliate Marketing</title>
     <meta name="description" content="Join holacash.network, a leading affiliate network with high-converting offers, weekly payouts, and a powerful Smartlink technology to maximize your traffic monetization.">
     <meta name="keywords" content="affiliate network, cpa network, smartlink, performance marketing, affiliate marketing, monetize traffic">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.svg" alt="holacash.network logo">
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html">
+                <img src="./assets/logo.svg" alt="holacash.network Logo" class="h-10">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="features.html" class="text-gray-600 hover:text-green-600 font-semibold">Features</a>
+                <a href="about.html" class="text-gray-600 hover:text-green-600 font-semibold">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-600 font-semibold">Contact</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="auth-buttons">
-                <a href="#" class="btn btn-login">Log In</a>
-                <a href="#" class="btn btn-signup">Sign Up</a>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="px-4 py-2 text-green-600 border border-green-600 rounded-md hover:bg-green-600 hover:text-white transition">Log In</a>
+                <a href="#" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">Sign Up</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-4">
+            <a href="features.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Features</a>
+            <a href="about.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">About Us</a>
+            <a href="contact.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Contact</a>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="px-4 py-2 text-green-600 border border-green-600 rounded-md hover:bg-green-600 hover:text-white transition">Log In</a>
+                <a href="#" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition">Sign Up</a>
             </div>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section id="hero">
-            <div class="container">
-                <h1>The Future of Affiliate Marketing is Here</h1>
-                <p>Maximize your revenue with our cutting-edge Smartlink technology and exclusive offers. Join thousands of successful affiliates today.</p>
-                <a href="#" class="btn btn-primary">Get Started</a>
+        <!-- Hero Section -->
+        <section class="bg-gray-800 text-white text-center py-20">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-bold mb-4">The Future of Affiliate Marketing is Here</h1>
+                <p class="text-xl mb-8">Maximize your revenue with our cutting-edge Smartlink technology and exclusive offers. Join thousands of successful affiliates today.</p>
+                <a href="#" class="bg-white text-green-600 font-bold py-3 px-8 rounded-md hover:bg-gray-200 transition text-lg">Get Started</a>
             </div>
         </section>
 
-        <section id="features">
-            <div class="container">
-                <h2>Why Choose holacash.network?</h2>
-                <div class="feature-grid">
-                    <div class="feature-item">
-                        <h3>Smartlink Technology</h3>
-                        <p>Our AI-powered Smartlink automatically directs your traffic to the most profitable offers, maximizing your EPC.</p>
+        <!-- Stats Section -->
+        <section class="bg-gray-700 py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+                    <div>
+                        <h3 class="text-4xl font-bold">25,000+</h3>
+                        <p class="text-gray-300">Affiliates</p>
                     </div>
-                    <div class="feature-item">
-                        <h3>Exclusive Offers</h3>
-                        <p>Get access to a wide range of high-converting, exclusive offers from direct advertisers across multiple verticals.</p>
+                    <div>
+                        <h3 class="text-4xl font-bold">500+</h3>
+                        <p class="text-gray-300">Advertisers</p>
                     </div>
-                    <div class="feature-item">
-                        <h3>Weekly Payouts</h3>
-                        <p>We believe in your success. Get reliable weekly payments with a low minimum threshold via multiple payment methods.</p>
+                    <div>
+                        <h3 class="text-4xl font-bold">5M+</h3>
+                        <p class="text-gray-300">Monthly Conversions</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="stats">
-            <div class="container">
-                <div class="stat-item">
-                    <h3>25,000+</h3>
-                    <p>Affiliates</p>
-                </div>
-                <div class="stat-item">
-                    <h3>500+</h3>
-                    <p>Advertisers</p>
-                </div>
-                <div class="stat-item">
-                    <h3>5M+</h3>
-                    <p>Monthly Conversions</p>
-                </div>
-                <div class="stat-item">
-                    <h3>$10M+</h3>
-                    <p>Paid to Affiliates</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works">
-            <div class="container">
-                <h2>Get Started in 3 Simple Steps</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Sign Up</h3>
-                        <p>Create your free account in minutes. Our team will review your application within 24 hours.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Get Your Link</h3>
-                        <p>Once approved, get your unique Smartlink from our user-friendly dashboard.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Start Earning</h3>
-                        <p>Drive traffic to your Smartlink and watch your earnings grow in real-time.</p>
+                    <div>
+                        <h3 class="text-4xl font-bold">$10M+</h3>
+                        <p class="text-gray-300">Paid to Affiliates</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>holacash.network was founded by a team of passionate affiliate marketing experts with a single mission: to create a platform that empowers affiliates and advertisers to achieve their goals. We are committed to providing the best technology, support, and offers in the industry.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Ready to Boost Your Income?</h2>
-                <p>Join holacash.network today and take your affiliate earnings to the next level.</p>
-                <a href="#" class="btn btn-primary">Sign Up Now</a>
+        <!-- How It Works Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12">Get Started in 3 Simple Steps</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">1</div>
+                        <h3 class="text-2xl font-semibold mb-2">Sign Up</h3>
+                        <p class="text-gray-600 max-w-xs">Create your free account in minutes. Our team will review your application within 24 hours.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">2</div>
+                        <h3 class="text-2xl font-semibold mb-2">Get Your Link</h3>
+                        <p class="text-gray-600 max-w-xs">Once approved, get your unique Smartlink from our user-friendly dashboard.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">3</div>
+                        <h3 class="text-2xl font-semibold mb-2">Start Earning</h3>
+                        <p class="text-gray-600 max-w-xs">Drive traffic to your Smartlink and watch your earnings grow in real-time.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 holacash.network. All Rights Reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
