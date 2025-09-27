@@ -7,7 +7,33 @@
     <meta name="description" content="Find answers to frequently asked questions about holacash.network. Learn about our Smartlink, payment terms, traffic types, and more.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Simple transition for accordion */
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up-hidden {
+            opacity: 0;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #1f2937, #2E8B57);
+        }
+        .btn-modern {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+        }
         .accordion-content {
             max-height: 0;
             overflow: hidden;
@@ -15,7 +41,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -28,6 +54,7 @@
                 <a href="advertisers.html" class="text-gray-600 hover:text-green-600 font-semibold">Advertisers</a>
                 <a href="verticals.html" class="text-gray-600 hover:text-green-600 font-semibold">Verticals</a>
                 <a href="faq.html" class="text-green-600 hover:text-green-700 font-semibold">FAQ</a>
+                <a href="blog.html" class="text-gray-600 hover:text-green-600 font-semibold">Blog</a>
                 <a href="about.html" class="text-gray-600 hover:text-green-600 font-semibold">About Us</a>
                 <a href="contact.html" class="text-gray-600 hover:text-green-600 font-semibold">Contact</a>
             </div>
@@ -47,6 +74,7 @@
             <a href="advertisers.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Advertisers</a>
             <a href="verticals.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Verticals</a>
             <a href="faq.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">FAQ</a>
+            <a href="blog.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Blog</a>
             <a href="about.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">About Us</a>
             <a href="contact.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Contact</a>
             <div class="mt-4 flex justify-center space-x-4">
@@ -57,53 +85,53 @@
     </header>
 
     <!-- Main Content for FAQ -->
-    <main class="py-20">
+    <main class="py-24">
         <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-800 mb-12">Frequently Asked Questions</h1>
+            <div class="text-center fade-in-up-hidden">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-16">Frequently Asked Questions</h1>
             </div>
 
             <div class="max-w-3xl mx-auto">
                 <!-- FAQ Item 1 -->
-                <div class="border-b border-gray-200 py-4">
+                <div class="border-b border-gray-200 py-4 fade-in-up-hidden">
                     <button class="w-full flex justify-between items-center text-left text-xl font-semibold text-gray-800 focus:outline-none accordion-toggle">
                         <span>What is a Smartlink?</span>
                         <span class="transform transition-transform duration-300">&#9662;</span>
                     </button>
-                    <div class="accordion-content mt-2 text-gray-600">
+                    <div class="accordion-content mt-4 text-gray-600">
                         <p>A Smartlink is a single URL that uses AI to automatically direct every user to the most suitable offer based on their GEO, device, OS, and other parameters. This maximizes the conversion rate and your earnings, as you don't have to manually test and switch offers.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 2 -->
-                <div class="border-b border-gray-200 py-4">
+                <div class="border-b border-gray-200 py-4 fade-in-up-hidden" style="animation-delay: 0.1s;">
                     <button class="w-full flex justify-between items-center text-left text-xl font-semibold text-gray-800 focus:outline-none accordion-toggle">
                         <span>What are your payment terms?</span>
                         <span class="transform transition-transform duration-300">&#9662;</span>
                     </button>
-                    <div class="accordion-content mt-2 text-gray-600">
+                    <div class="accordion-content mt-4 text-gray-600">
                         <p>We offer flexible payment terms to suit your needs. Our standard is weekly payments (Net-7) every Tuesday, with a minimum payout threshold of $100. We support various payment methods, including PayPal, Payoneer, and Wire Transfers.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 3 -->
-                <div class="border-b border-gray-200 py-4">
+                <div class="border-b border-gray-200 py-4 fade-in-up-hidden" style="animation-delay: 0.2s;">
                     <button class="w-full flex justify-between items-center text-left text-xl font-semibold text-gray-800 focus:outline-none accordion-toggle">
                         <span>What kind of traffic do you accept?</span>
                         <span class="transform transition-transform duration-300">&#9662;</span>
                     </button>
-                    <div class="accordion-content mt-2 text-gray-600">
+                    <div class="accordion-content mt-4 text-gray-600">
                         <p>We accept most types of traffic, including social, search (SEO/PPC), display, pop, and native. However, we have a zero-tolerance policy for fraudulent traffic. This includes bots, incentivized clicks, and any traffic generated from illegal sources. All publishers go through a verification process to ensure quality.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 4 (For Advertisers) -->
-                <div class="border-b border-gray-200 py-4">
+                <div class="border-b border-gray-200 py-4 fade-in-up-hidden" style="animation-delay: 0.3s;">
                     <button class="w-full flex justify-between items-center text-left text-xl font-semibold text-gray-800 focus:outline-none accordion-toggle">
                         <span>How do you ensure traffic quality for advertisers?</span>
                         <span class="transform transition-transform duration-300">&#9662;</span>
                     </button>
-                    <div class="accordion-content mt-2 text-gray-600">
+                    <div class="accordion-content mt-4 text-gray-600">
                         <p>We use a multi-layered approach to fraud detection, including in-house and third-party tools, to filter out fraudulent activity in real-time. We also have a strict publisher approval process and continuously monitor campaign performance to ensure you only pay for legitimate, high-quality traffic.</p>
                     </div>
                 </div>
@@ -130,17 +158,37 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Accordion toggle
-        document.querySelectorAll('.accordion-toggle').forEach(button => {
-            button.addEventListener('click', () => {
-                const accordionContent = button.nextElementSibling;
-                button.querySelector('span:last-child').classList.toggle('rotate-180');
+        document.addEventListener("DOMContentLoaded", function() {
+            // Accordion toggle
+            document.querySelectorAll('.accordion-toggle').forEach(button => {
+                button.addEventListener('click', () => {
+                    const accordionContent = button.nextElementSibling;
+                    button.querySelector('span:last-child').classList.toggle('rotate-180');
 
-                if (accordionContent.style.maxHeight) {
-                    accordionContent.style.maxHeight = null;
-                } else {
-                    accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
-                }
+                    if (accordionContent.style.maxHeight) {
+                        accordionContent.style.maxHeight = null;
+                    } else {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // Scroll-triggered animations
+            const animatedElements = document.querySelectorAll('.fade-in-up-hidden');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
             });
         });
     </script>

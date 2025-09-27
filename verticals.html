@@ -6,8 +6,37 @@
     <title>Verticals - holacash.network</title>
     <meta name="description" content="Explore the top-performing verticals at holacash.network, including Dating, iGaming, E-commerce, and Lead Generation. We have high-converting offers for every type of traffic.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up-hidden {
+            opacity: 0;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #1f2937, #2E8B57);
+        }
+        .btn-modern {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -19,6 +48,8 @@
                 <a href="features.html" class="text-gray-600 hover:text-green-600 font-semibold">Features</a>
                 <a href="advertisers.html" class="text-gray-600 hover:text-green-600 font-semibold">Advertisers</a>
                 <a href="verticals.html" class="text-green-600 hover:text-green-700 font-semibold">Verticals</a>
+                <a href="faq.html" class="text-gray-600 hover:text-green-600 font-semibold">FAQ</a>
+                <a href="blog.html" class="text-gray-600 hover:text-green-600 font-semibold">Blog</a>
                 <a href="about.html" class="text-gray-600 hover:text-green-600 font-semibold">About Us</a>
                 <a href="contact.html" class="text-gray-600 hover:text-green-600 font-semibold">Contact</a>
             </div>
@@ -37,6 +68,8 @@
             <a href="features.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Features</a>
             <a href="advertisers.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Advertisers</a>
             <a href="verticals.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Verticals</a>
+            <a href="faq.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">FAQ</a>
+            <a href="blog.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Blog</a>
             <a href="about.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">About Us</a>
             <a href="contact.html" class="block text-center py-2 text-gray-600 hover:text-green-600 font-semibold">Contact</a>
             <div class="mt-4 flex justify-center space-x-4">
@@ -47,35 +80,35 @@
     </header>
 
     <!-- Main Content for Verticals -->
-    <main class="py-20">
+    <main class="py-24">
         <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">Top-Performing Verticals</h1>
+            <div class="text-center fade-in-up-hidden">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Top-Performing Verticals</h1>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">We specialize in a wide range of verticals, ensuring that no matter your traffic type, we have high-converting offers for you.</p>
             </div>
 
             <div class="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">Dating</h3>
                     <p class="text-gray-600">One of the most profitable and evergreen verticals. We have a huge selection of offers for mainstream and casual dating, covering GEOs all over the world.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.1s;">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">iGaming & Betting</h3>
                     <p class="text-gray-600">Capitalize on the booming iGaming market. We provide exclusive offers for online casinos, sports betting, and poker rooms with high CPA rates and RevShare deals.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.2s;">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">E-commerce & Shopping</h3>
                     <p class="text-gray-600">Promote physical and digital products from leading brands. Our e-commerce offers cover a wide range of niches, from electronics to fashion and beauty.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.3s;">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">Lead Generation</h3>
                     <p class="text-gray-600">Drive leads for businesses in various sectors, including finance (loans, insurance), home improvement, and education. We offer high payouts for qualified leads.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.4s;">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">Mobile Content & Apps</h3>
                     <p class="text-gray-600">Monetize your mobile traffic with our vast portfolio of mobile content offers, including app installs (CPI), subscriptions, and mobile games.</p>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.5s;">
                     <h3 class="text-2xl font-bold text-green-600 mb-4">Health & Nutra</h3>
                     <p class="text-gray-600">A consistently high-performing vertical. We have a wide array of offers for health supplements, skincare products, and fitness programs with attractive payouts.</p>
                 </div>
@@ -98,6 +131,26 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             var mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll-triggered animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.fade-in-up-hidden');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
         });
     </script>
 </body>

@@ -7,8 +7,37 @@
     <meta name="description" content="Join holacash.network, a leading affiliate network with high-converting offers, weekly payouts, and a powerful Smartlink technology to maximize your traffic monetization.">
     <meta name="keywords" content="affiliate network, cpa network, smartlink, performance marketing, affiliate marketing, monetize traffic">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up-hidden {
+            opacity: 0;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #1f2937, #2E8B57);
+        }
+        .btn-modern {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -55,31 +84,31 @@
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section class="bg-gray-800 text-white text-center py-20">
-            <div class="container mx-auto px-6">
-                <h1 class="text-5xl font-bold mb-4">The Future of Affiliate Marketing is Here</h1>
-                <p class="text-xl mb-8">Maximize your revenue with our cutting-edge Smartlink technology and exclusive offers. Join thousands of successful affiliates today.</p>
-                <a href="#" class="bg-white text-green-600 font-bold py-3 px-8 rounded-md hover:bg-gray-200 transition text-lg">Get Started</a>
+        <section class="hero-gradient text-white text-center py-24">
+            <div class="container mx-auto px-6 fade-in-up-hidden">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4">The Future of Affiliate Marketing is Here</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Maximize your revenue with our cutting-edge Smartlink technology and exclusive offers. Join thousands of successful affiliates today.</p>
+                <a href="#" class="bg-white text-green-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 text-lg btn-modern">Get Started</a>
             </div>
         </section>
 
         <!-- Stats Section -->
-        <section class="bg-gray-700 py-12">
+        <section class="bg-gray-700 py-16">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-                    <div>
+                    <div class="fade-in-up-hidden">
                         <h3 class="text-4xl font-bold">25,000+</h3>
                         <p class="text-gray-300">Affiliates</p>
                     </div>
-                    <div>
+                    <div class="fade-in-up-hidden" style="animation-delay: 0.1s;">
                         <h3 class="text-4xl font-bold">500+</h3>
                         <p class="text-gray-300">Advertisers</p>
                     </div>
-                    <div>
+                    <div class="fade-in-up-hidden" style="animation-delay: 0.2s;">
                         <h3 class="text-4xl font-bold">5M+</h3>
                         <p class="text-gray-300">Monthly Conversions</p>
                     </div>
-                    <div>
+                    <div class="fade-in-up-hidden" style="animation-delay: 0.3s;">
                         <h3 class="text-4xl font-bold">$10M+</h3>
                         <p class="text-gray-300">Paid to Affiliates</p>
                     </div>
@@ -88,25 +117,25 @@
         </section>
 
         <!-- How It Works Section -->
-        <section class="py-20">
+        <section class="py-24">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-gray-800 mb-12">Get Started in 3 Simple Steps</h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-16 fade-in-up-hidden">Get Started in 3 Simple Steps</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-16">
                     <!-- Step 1 -->
-                    <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">1</div>
+                    <div class="flex flex-col items-center fade-in-up-hidden">
+                        <div class="flex items-center justify-center w-20 h-20 bg-green-600 text-white rounded-full text-3xl font-bold mb-4 shadow-lg">1</div>
                         <h3 class="text-2xl font-semibold mb-2">Sign Up</h3>
                         <p class="text-gray-600 max-w-xs">Create your free account in minutes. Our team will review your application within 24 hours.</p>
                     </div>
                     <!-- Step 2 -->
-                    <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">2</div>
+                    <div class="flex flex-col items-center fade-in-up-hidden" style="animation-delay: 0.2s;">
+                        <div class="flex items-center justify-center w-20 h-20 bg-green-600 text-white rounded-full text-3xl font-bold mb-4 shadow-lg">2</div>
                         <h3 class="text-2xl font-semibold mb-2">Get Your Link</h3>
                         <p class="text-gray-600 max-w-xs">Once approved, get your unique Smartlink from our user-friendly dashboard.</p>
                     </div>
                     <!-- Step 3 -->
-                    <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center w-16 h-16 bg-green-600 text-white rounded-full text-2xl font-bold mb-4">3</div>
+                    <div class="flex flex-col items-center fade-in-up-hidden" style="animation-delay: 0.4s;">
+                        <div class="flex items-center justify-center w-20 h-20 bg-green-600 text-white rounded-full text-3xl font-bold mb-4 shadow-lg">3</div>
                         <h3 class="text-2xl font-semibold mb-2">Start Earning</h3>
                         <p class="text-gray-600 max-w-xs">Drive traffic to your Smartlink and watch your earnings grow in real-time.</p>
                     </div>
@@ -115,43 +144,43 @@
         </section>
 
         <!-- Why Partner With Us Section -->
-        <section class="bg-white py-20">
+        <section class="bg-white py-24">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-gray-800 mb-12">Who is holacash.network for?</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-16 fade-in-up-hidden">Who is holacash.network for?</h2>
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- For Affiliates -->
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="bg-gray-50 p-10 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300">
                         <h3 class="text-3xl font-bold text-green-600 mb-4">Affiliates & Publishers</h3>
                         <p class="text-gray-600 mb-6">You have traffic and you want to make money from it. We provide the tools, offers, and support to turn your clicks into cash. Maximize your revenue with our Smartlink technology and enjoy weekly payouts.</p>
-                        <a href="features.html" class="bg-green-600 text-white font-bold py-3 px-8 rounded-md hover:bg-green-700 transition text-lg">Learn More</a>
+                        <a href="features.html" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 text-lg btn-modern">Learn More</a>
                     </div>
                     <!-- For Advertisers -->
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="bg-gray-50 p-10 rounded-xl shadow-lg fade-in-up-hidden transform hover:scale-105 transition-transform duration-300" style="animation-delay: 0.2s;">
                         <h3 class="text-3xl font-bold text-green-600 mb-4">Advertisers & Brands</h3>
                         <p class="text-gray-600 mb-6">You need high-quality traffic that converts. We connect you with our global network of vetted publishers to drive targeted users to your offers, helping you scale your business and achieve a high ROI.</p>
-                        <a href="advertisers.html" class="bg-green-600 text-white font-bold py-3 px-8 rounded-md hover:bg-green-700 transition text-lg">Get Traffic</a>
+                        <a href="advertisers.html" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 text-lg btn-modern">Get Traffic</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials Section -->
-        <section class="py-20">
+        <section class="py-24">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold text-gray-800 mb-12">What Our Partners Say</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-16 fade-in-up-hidden">What Our Partners Say</h2>
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden">
                         <p class="text-gray-600 italic">"holacash.network has been a game-changer for my business. Their Smartlink is incredible, and I've seen my EPCs double since I switched. Plus, the weekly payments are always on time."</p>
                         <p class="mt-4 font-bold text-green-600">- Alex, Affiliate Marketer</p>
                     </div>
                     <!-- Testimonial 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden" style="animation-delay: 0.2s;">
                         <p class="text-gray-600 italic">"The quality of traffic we get from holacash.network is top-notch. Our campaigns have never performed better, and our account manager is always there to help us optimize. Highly recommended."</p>
                         <p class="mt-4 font-bold text-green-600">- Sarah, Advertiser</p>
                     </div>
                     <!-- Testimonial 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="bg-white p-8 rounded-xl shadow-lg fade-in-up-hidden" style="animation-delay: 0.4s;">
                         <p class="text-gray-600 italic">"I've been in this industry for a decade, and holacash.network is one of the most reliable networks I've worked with. Great offers, great support, and fast payments. What more could you ask for?"</p>
                         <p class="mt-4 font-bold text-green-600">- Mike, Media Buyer</p>
                     </div>
@@ -175,6 +204,26 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             var mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll-triggered animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.fade-in-up-hidden');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
         });
     </script>
 </body>

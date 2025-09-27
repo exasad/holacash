@@ -6,8 +6,37 @@
     <title>About Us - holacash.network</title>
     <meta name="description" content="Learn about the team and mission behind holacash.network. We are dedicated to building the most transparent and effective affiliate network for our partners.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up-hidden {
+            opacity: 0;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+        .hero-gradient {
+            background: linear-gradient(45deg, #1f2937, #2E8B57);
+        }
+        .btn-modern {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-modern:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -51,14 +80,14 @@
     </header>
 
     <!-- Main Content -->
-    <main class="py-20">
+    <main class="py-24">
         <div class="container mx-auto px-6">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">Our Mission</h1>
+            <div class="text-center fade-in-up-hidden">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Mission</h1>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">holacash.network was founded by a team of passionate affiliate marketing experts with a single mission: to create a platform that empowers affiliates and advertisers to achieve their goals. We are committed to providing the best technology, support, and offers in the industry.</p>
             </div>
 
-            <div class="mt-20 text-center">
+            <div class="mt-24 text-center fade-in-up-hidden" style="animation-delay: 0.2s;">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Team</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Our team is composed of seasoned veterans from the performance marketing world. With decades of combined experience, we understand the challenges affiliates and advertisers face. We are dedicated to building long-term partnerships based on trust, transparency, and mutual success.
@@ -82,6 +111,26 @@
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             var mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll-triggered animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.fade-in-up-hidden');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
         });
     </script>
 </body>
