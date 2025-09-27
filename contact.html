@@ -87,41 +87,86 @@
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">We're here to help. Whether you're an affiliate looking to join or an advertiser with a great offer, we'd love to hear from you.</p>
             </div>
 
-            <div class="mt-16 max-w-4xl mx-auto bg-white p-10 rounded-xl shadow-lg fade-in-up-hidden" style="animation-delay: 0.2s;">
-                <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+            <div class="mt-16 grid md:grid-cols-2 gap-16 items-start">
+                <div class="bg-white p-10 rounded-xl shadow-lg fade-in-up-hidden" style="animation-delay: 0.2s;">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Send Us a Message</h2>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                            </div>
                         </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                        <div class="mt-6">
+                            <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
+                        </div>
+                        <div class="mt-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition"></textarea>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <button type="submit" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 text-lg btn-modern">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="fade-in-up-hidden" style="animation-delay: 0.4s;">
+                    <div class="bg-white p-10 rounded-xl shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Info</h2>
+                        <div class="space-y-6 text-lg">
+                            <div>
+                                <h3 class="font-semibold">Address:</h3>
+                                <p class="text-gray-600">30 N Gould St, STE R<br>Sheridan, WY 82801</p>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Email:</h3>
+                                <p class="text-gray-600">support@holacash.network</p>
+                                <p class="text-gray-600">finance@holacash.network</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-6">
-                        <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
-                        <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition">
-                    </div>
-                    <div class="mt-6">
-                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition"></textarea>
-                    </div>
-                    <div class="mt-8 text-center">
-                        <button type="submit" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 text-lg btn-modern">Send Message</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 holacash.network. All Rights Reserved.</p>
-            <div class="mt-4">
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+    <footer class="bg-gray-800 text-white pt-16 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <img src="./assets/logo.svg" alt="holacash.network Logo" class="h-10 mb-4">
+                    <p class="text-gray-400">The premier affiliate network for maximizing your earnings and acquiring high-quality traffic.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Useful Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="advertisers.html" class="text-gray-400 hover:text-white">Advertisers</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Terms</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Support & Help</h3>
+                    <ul class="space-y-2">
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 holacash.network. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
